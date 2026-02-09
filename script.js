@@ -94,12 +94,17 @@ $(document).ready(function() {
 
         // Check if they've met
         if (clickCount >= maxClicks) {
-            // Disable button
-            $(this).prop('disabled', true).text('💕 Together Forever! 💕');
-            $(this).css({
-                'background': 'linear-gradient(135deg, #ff1744 0%, #c51162 100%)',
-                'cursor': 'not-allowed'
-            });
+            // Hide person images
+            $('#person1').fadeOut(600);
+            $('#person2').fadeOut(600);
+            
+            // Show together image after a delay
+            setTimeout(function() {
+                $('#together').addClass('show');
+            }, 700);
+            
+            // Hide button
+            $(this).fadeOut(800);
 
             // Wait for animation to complete, then burst hearts
             setTimeout(function() {
@@ -108,7 +113,7 @@ $(document).ready(function() {
                 // Create multiple bursts for extra effect
                 setTimeout(createCelebrationBurst, 500);
                 setTimeout(createCelebrationBurst, 1000);
-            }, 800);
+            }, 1500);
         } else {
             // Update button text with progress
             const remaining = maxClicks - clickCount;
