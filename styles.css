@@ -200,7 +200,7 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .person-image {
         width: 200px;
     }
@@ -216,6 +216,12 @@ body {
     .move-btn {
         padding: 15px 30px;
         font-size: 16px;
+    }
+
+    #iloveyou {
+        padding: 10px 15px;
+        font-size: 12px;
+
     }
 }
 
