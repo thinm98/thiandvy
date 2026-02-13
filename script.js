@@ -3,8 +3,8 @@ $(document).ready(function() {
     const heartEmojis = ['❤️', '💕', '💖', '💗', '💘', '💝', '💞', '💓', '💟', '🩷'];
     
     let clickCount = 0;
-    const maxClicks = 8; // Number of clicks before hearts burst
-    const moveDistancePercent = 12; // Percentage to move each click
+    const maxClicks = 6; // Number of clicks before hearts burst
+    const moveDistancePercent = 10; // Percentage to move each click
 
     // Create floating hearts (existing background effect)
     function createFloatingHeart() {
