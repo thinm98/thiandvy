@@ -44,12 +44,15 @@ body {
         transform: translateY(100vh) rotate(0deg);
         opacity: 0;
     }
+
     10% {
         opacity: 0.7;
     }
+
     90% {
         opacity: 0.7;
     }
+
     100% {
         transform: translateY(-100px) rotate(720deg);
         opacity: 0;
@@ -66,20 +69,56 @@ body {
     filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
 }
 
+#button-container-iloveyou2 {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    animation: pulse 1.2s ease-in-out infinite;
+    display: none;
+}
+
+#button-container-iloveyou1 {
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    animation: pulse 1.2s ease-in-out infinite;
+    display: none;
+
+
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+        /* to hơn */
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
 #person1 {
     left: 50px;
     width: 18vw;
+    bottom: 2%;
+
 }
 
 #person2 {
     right: 50px;
-    width: 20vw;
+    width: 18vw;
 }
 
 /* Together Image */
 .together-image {
     position: fixed;
-    width: 20vw;
+    width: 18vw;
     height: auto;
     bottom: 0%;
     left: 50%;
@@ -128,9 +167,12 @@ body {
 }
 
 @keyframes pulse-button {
-    0%, 100% {
+
+    0%,
+    100% {
         box-shadow: 0 10px 30px rgba(233, 30, 99, 0.5);
     }
+
     50% {
         box-shadow: 0 10px 40px rgba(233, 30, 99, 0.8);
     }
@@ -150,6 +192,7 @@ body {
         opacity: 1;
         transform: translate(0, 0) scale(0.5) rotate(0deg);
     }
+
     100% {
         opacity: 0;
         transform: translate(var(--tx), var(--ty)) scale(1.5) rotate(720deg);
@@ -161,15 +204,15 @@ body {
     .person-image {
         width: 200px;
     }
-    
+
     #person1 {
         left: 20px;
     }
-    
+
     #person2 {
         right: 20px;
     }
-    
+
     .move-btn {
         padding: 15px 30px;
         font-size: 16px;
@@ -198,9 +241,12 @@ body {
 }
 
 @keyframes pulse-text {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.05);
     }
@@ -218,15 +264,20 @@ body {
 }
 
 @keyframes heartbeat {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
+
     25% {
         transform: scale(1.1);
     }
+
     50% {
         transform: scale(1);
     }
+
     75% {
         transform: scale(1.15);
     }
@@ -297,6 +348,7 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -327,16 +379,33 @@ body {
     animation: bounce 0.5s ease infinite;
 }
 
-.hearts-row span:nth-child(1) { animation-delay: 0s; }
-.hearts-row span:nth-child(2) { animation-delay: 0.1s; }
-.hearts-row span:nth-child(3) { animation-delay: 0.2s; }
-.hearts-row span:nth-child(4) { animation-delay: 0.3s; }
-.hearts-row span:nth-child(5) { animation-delay: 0.4s; }
+.hearts-row span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.hearts-row span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.hearts-row span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.hearts-row span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.hearts-row span:nth-child(5) {
+    animation-delay: 0.4s;
+}
 
 @keyframes bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-10px);
     }
@@ -361,10 +430,12 @@ body {
         opacity: 1;
         transform: scale(0);
     }
+
     50% {
         opacity: 1;
         transform: scale(1.5);
     }
+
     100% {
         opacity: 0;
         transform: scale(2) translateY(-100px);
@@ -376,11 +447,11 @@ body {
     .title {
         font-size: 1.8rem;
     }
-    
+
     .heart-icon {
         font-size: 60px;
     }
-    
+
     .content {
         padding: 25px;
     }

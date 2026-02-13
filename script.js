@@ -101,6 +101,10 @@ $(document).ready(function() {
             // Show together image after a delay
             setTimeout(function() {
                 $('#together').addClass('show');
+                $('#button-container-iloveyou2').css('display', 'block');
+                $('#button-container-iloveyou1').css('display', 'block');
+
+
             }, 700);
             
             // Hide button
@@ -117,7 +121,7 @@ $(document).ready(function() {
         } else {
             // Update button text with progress
             const remaining = maxClicks - clickCount;
-            $(this).text(`Bring Them Closer 💕 (${remaining} more)`);
+            $(this).text(`Bring Them Closer 💕`);
         }
     });
 });
